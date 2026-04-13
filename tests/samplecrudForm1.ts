@@ -11,7 +11,7 @@ export class Form1Submission {
   async submitForm(page: Page) {
     await page.goto(url.baseUrl);
     for (const fieldLocator of elements) {
-      const element = page.locator(fieldLocator.name);
+      //const element = page.locator(fieldLocator.name);
 
     switch (fieldLocator.type) {
       case 'textbox':
